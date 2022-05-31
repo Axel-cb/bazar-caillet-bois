@@ -57,8 +57,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(240, 248, 255, 0.692);
-  /* opacity: 0.5; */
+  background-color: rgba(240, 248, 255, 0.692);  
   border: 1px solid black;
 }
 
@@ -100,8 +99,10 @@ nav ul {
   margin: auto;
 }
 
-.grid-img:hover {
-  transform: scale(1.1);
+.galeria__grid-img:hover{
+ transform: scale(1.2);
+ background-color: #7e8892;
+ transition: all 1.5s;
 }
 
 .galeria__grid-img {
@@ -139,7 +140,9 @@ a {
 
 a:hover {
   color: rgba(145, 93, 93, 0.658);
-  text-decoration: underline;
+  text-decoration: underline;  
+  transition: all 1s;
+  transform: rotate(360deg);  
 }
 
 section {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Bazar mayorista</title>
     <link rel="shortcup icon" href="../assets-bazar/imagenes/rigo.jpg">
     <link rel="stylesheet" href="../css/style.css">
@@ -28,8 +29,35 @@
 
 <body>
     <header class="gradiente-header">
-        <h1 class="animate__animated animate__bounceInLeft">Bazar mayorista</h1>           
-        <nav>
+        <h1 class="animate__animated animate__bounceInLeft">Bazar mayorista</h1> 
+        <nav class="navbar navbar-expand-lg bg-light nav-color">
+            <div class="container-fluid">
+                <span>Menú</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-space" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link navMod" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navMod" href="./quienessomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active navMod" href="./nuestrosproductos.html">Nuestros productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navMod" href="./galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navMod" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>              
+        <!-- <nav>
             <ul>
                 <li> <a href="../index.html">Inicio</a> </li>
                 <li> <a href="quienessomos.html">Quienes somos</a></li>
@@ -37,7 +65,7 @@
                 <li> <a href="galeria.html">Galeria</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <!-- Barra mobile -->
     <header class="gradiente-header">
@@ -156,9 +184,8 @@
             <div>         
             <p>Busca productos Rigolleau? Poseemos precios directos de fábrica.
                 ✓ Envíos a todo el País ✓ Visite nuestro Catálogo!</p>  
-            </div>      
+            </div>          
     
-    <hr>
     <footer>
         <a href="https://www.instagram.com/rigolleau.s.a/" class="insta"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://axel.cbois91@gmail.com" class="correo"><i class="fa-solid fa-envelope"></i></a>
@@ -172,7 +199,7 @@
     <div class="pie">2021 © Bazar Mayorista</div>
 </footer>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 
 </html>

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #040707;
 }
@@ -54,6 +58,34 @@ main {
   background-blend-mode: darken;
 }
 
+.barra-redes{
+  position: fixed;
+  left: 0;
+  top: 350px;
+  z-index: 2000;
+  margin: -38px;
+}
+
+.barra-redes:hover{
+  margin: 0;
+  transition: 0.5s;
+}
+
+.barra-redesIcon{
+  display: inline-block;
+  color: #fff;
+  background: #000000;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.5s;  
+  font-size: 25px;
+}
+
+.barra-redes ul{
+  list-style: none;
+  padding: 0;
+}
+
 .button-mod{
   background-color: rgba(87, 114, 119, 0.562);
 }
@@ -64,9 +96,9 @@ main {
 
 .barra {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .barra__seleccion {
@@ -80,7 +112,7 @@ main {
 .barra__menu-color {
   display: flex;
   flex-direction: row;
-  color: rgba(21, 90, 78, 0.856);
+  color: rgba(8, 26, 23, 0.856);
 }
 .barra__menu {
   display: flex;
@@ -158,9 +190,7 @@ a {
 
 a:hover {
   color: rgba(145, 93, 93, 0.658);
-  text-decoration: underline;  
-  transition: all 1s;
-  transform: rotate(360deg);  
+  text-decoration: underline;   
 }
 
 section {
@@ -173,6 +203,7 @@ section {
   color: rgba(240, 248, 255, 0.205);
 }
 
+
 footer {
   background-color: rgba(152, 157, 161, 0.966);
   display: flex;
@@ -181,19 +212,22 @@ footer {
   display: block;
 }
 
+.input-width{
+  width: 80%;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  align-items:flex-start;
   flex-wrap: wrap;
   text-align: center;
   padding-top: 180px;
 }
 
-.formulario-field {
-  text-align: left;
-  width: 25%;
+.formulario-field {  
+  width: 50%;
   display: flex;
   flex-direction: column; 
   align-items: center; 
@@ -201,7 +235,11 @@ footer {
   font-size: 25px;
   min-width: 250px;  
   background-color: #2f4353;
-  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);  
+}
+
+input{
+  margin: 20px;
 }
 
 legend{
@@ -247,8 +285,12 @@ legend{
   background-color: rgba(240, 248, 255, 0.486);
   opacity: 1;
   border: 1px solid black;   
-  padding: 40px;  
+  margin: 40px;  
   width: 100%;
+}
+
+.div-left{
+  width: 40%;
 }
 
 .navMod{
@@ -258,7 +300,10 @@ legend{
   margin: 15px;
 }
 
-.about-us__p {     
+.about-us__p {  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;   
   width: auto;
   font-size: 130%;
   padding: 40px;  
@@ -272,16 +317,16 @@ legend{
 }
 
 .carousel-qsomos{
-  display: flex;
-  flex-direction: column; 
+  display: flex;   
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  width: 40%;   
+  align-content:flex-end;
+  margin: 30px;    
 }
 
-.img_carousel{
-  max-width: 80%;
+.width-carrImg{  
+  width: 35%; 
+  margin: 80px;
 }
 
 .insta {
@@ -413,7 +458,7 @@ iframe {
   box-shadow: 7px 7px 15px #592a08;
   width: 50%;
   min-width: 300px;
-  height: 40em;
+  height: 30em;
 }
 
 .iframe-flex {
@@ -453,11 +498,17 @@ th {
 .iframe-mobile {
   display: none;
 }
+.qsomos-mobile{
+  display: none;
+}
 
 /* Mobile */
 
 @media screen and (max-width: 320px) {
   nav {
+    display: none;
+  }
+  .barra-redes{
     display: none;
   }
   #barraMobile {
@@ -494,6 +545,7 @@ th {
   }
   .about-us {
     margin: 0%;
+    min-width: 250px;
   }
   .galeria__copas,
   .galeria__vasos,
@@ -517,6 +569,15 @@ th {
     height: 25rem;
     border-radius: 6%;
     margin-bottom: 60px;
+  }
+  .qsomos-mobile{
+    display: flex;
+    flex-direction: column!important;
+    margin: 30px;  
+  }
+  .width-carrImg{
+    width: auto;
+    margin: auto;
   }
 }
 

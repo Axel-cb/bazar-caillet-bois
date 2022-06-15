@@ -60,7 +60,7 @@ html {
   
   .barra-redes:hover{
     margin: 0;  
-    transition: 0.5s;  
+    transition: 0.5s ease;  
   }
   
   .barra-redesIcon{
@@ -75,15 +75,15 @@ html {
   }
   
   .icon-face:hover{
-    color: nth($colores , 2 );
+    color: nth($colores , 1);
   }
   
   .icon-mail:hover{
-    color: grey;
+    color: nth($colores , 2);
   }
   
   .icon-whatsapp:hover{
-    color: #25d366;
+    color: nth($colores , 3);
   }
   
   .barra-redes ul{

@@ -1,3 +1,9 @@
+.img-index__1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .top-page {
   position: sticky;
   left: 1700px;
@@ -386,11 +392,12 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Bona Nova", serif;
+  font-family: 'Bona Nova', serif;
   font-weight: 90;
   font-size: 70px;
   color: aliceblue;
   margin-bottom: 0;
+  text-shadow: 2px 2px #161414;
 }
 
 .nav-color {
@@ -408,7 +415,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 15px;
+  margin: 20px;
 }
 
 main {
@@ -481,23 +488,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin: 0%;
-  display: block;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.insta {
-  margin: 100px;
-  color: rgba(17, 14, 14, 0.788);
-  font-size: 60px;
+.insta,
+.correo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 80px;
+  color: rgba(184, 185, 184, 0.877);
+}
+
+.insta:hover,
+.correo:hover {
+  text-decoration: none;
 }
 
 .pie {
   margin-left: 10px;
-}
-
-.correo {
-  margin: 100px;
-  color: rgba(17, 14, 14, 0.788);
-  font-size: 60px;
 }
 
 .fondo__op {
@@ -510,9 +521,7 @@ footer {
 }
 
 .img-index__1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
+  align-items: center;
   width: auto;
   padding: 15px;
 }
@@ -597,23 +606,6 @@ footer {
   #barraMobile {
     display: grid;
   }
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.insta,
-.correo {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.pie {
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

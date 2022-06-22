@@ -1,0 +1,66 @@
+h2 {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  text-decoration: underline;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+  font-family: "Sansita", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.tabla-grid {
+  display: flex;
+  justify-content: center;
+  font-size: 180%;
+  font-weight: bold;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(240, 248, 255, 0.692);
+  width: auto;
+}
+
+th {
+  color: rgba(165, 120, 60, 0.856);
+}
+
+.banner-width {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592a08;
+  color: #000000;
+}
+
+.cardMargin{
+  margin-top: 15px;
+  margin-bottom: 15px; 
+} 
+
+
+.cardMargin:hover{
+  transform: scale(1.1);
+}
+
+.cardWidth{
+  height: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592a08;
+  color: #000000;
+}

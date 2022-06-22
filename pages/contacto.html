@@ -53,54 +53,118 @@
         </div>
       </div>
     </nav>     
-  <div class="barra-redes">
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/Bazarbohemiacristal/" class="barra-redesIcon icon-face" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/rigolleau.s.a/" class="barra-redesIcon" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="mailto:axel.cbois91@gmail.com" class="barra-redesIcon icon-mail" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-        <li>
-          <a href="https://wa.me/1162599423?text=¡Estoy+interesado!" class="barra-redesIcon icon-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        </li>
-    </ul>
-  </div>
+    <div class="barra-redes">      
+      <ul>
+  <li>
+    <a href="https://www.facebook.com/Bazarbohemiacristal/" class="barra-redesIcon icon-face" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/rigolleau.s.a/" class="barra-redesIcon" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="mailto:axel.cbois91@gmail.com" class="barra-redesIcon icon-mail" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+    <li>
+      <a href="https://wa.me/1162599423?text=¡Estoy+interesado!" class="barra-redesIcon icon-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </li>         
+</ul>
+<span><i class="fa-solid fa-circle-arrow-right arrow animate__heartBeat"></i></span>  
+</div>      
   <main>
-    <div class="container">
-    <form class="formulario">
-      <fieldset class="formulario-field">
-        <legend>Contacto</legend>
-        <div class="mb-3 input-width">        
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Carlos">
-        </div>
-        <div class="mb-3 input-width">
-          <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Pérez">
-        </div>
-        <div class="input-width">
-        <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-        </div>
-        <div>Hombre</div>
-        <input type="radio" name="sexo" value="hombre">
-        <div>Mujer</div>
-        <input type="radio" name="sexo" value="mujer">
-        <div class="mb-3 input-width">
-          <label for="exampleFormControlTextarea1" class="form-label">Dejame tu comentario</label>
-          <textarea class="form-control txt-area" id="exampleFormControlTextarea1" rows="3"
-            placeholder="Escriba aqui"></textarea>
-        </div>
-        Deseo recibir newsletter <input type="checkbox" name="acepta" value="1">
-        <div>
-        <input type="submit" class="btn-success">
-        <input type="reset"></div>
-      </fieldset>
-    </form>
-  </div>
+    <div class="container form-adjust">
+      <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">¡Contactame!</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.</p>
     
-    <h3>¿Donde estamos?</h3>
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Juan Pérez">
+                                <label for="name" class="">Tu nombre</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="ejemplo@ejemplo.com">
+                                <label for="email" class="">Tu mail</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Tema</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-12">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Escriba aqui"></textarea>
+                                <label for="message">Tu mensaje</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                </form>
+    
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary btn-bg" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>MFK Berazategui Buenos Aires AR, Diag. Lisandro de la Torre 1651, B1884</p>
+                    </li>
+    
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 11 62 59 94 23</p>
+                    </li>
+    
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>axel.cbois91@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+    
+    </section>
     </div>
-    <div class="map">
+    
+    <h3><i class="fa-solid fa-map-location-dot location-margin"></i>¿Donde estamos?</h3>
+    </div>    
+    <div class="container map">
       <iframe class="map-size"
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6555.537243236449!2d-58.209038923952306!3d-34.76142092167567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srigolleau%20berazategui!5e0!3m2!1ses-419!2sar!4v1651545824946!5m2!1ses-419!2sar"
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

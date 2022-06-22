@@ -1,138 +1,3 @@
-//    scss
-//   scss inicio
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: $bg-body;
-}
-
-.gradiente-header {
-  background-color: $bg-body;
-  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
-}
-h1 {
-  text-align: map-get($titulos, alineacion);
-  font-family: map-get($titulos, fuente);
-  font-weight: 90;
-  font-size: 70px;
-  color: aliceblue;
-  margin-bottom: 0;
-  text-shadow: 2px 2px #161414;
-}
-
-.nav-color {
-  background-color: #2f4353;
-  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
-}
-
-.nav-sticky {
-  position: sticky;
-  width: 100%;
-  top: 0;
-}
-
-.navMod {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-main {
-  background: rgba(0, 0, 0, 0.4)
-    url(../assets-bazar/imagenes/imagen-background.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-}
-
-.barra-redes {
-  position: fixed;
-  left: 0;
-  top: 350px;
-  z-index: 2000;
-  margin: -41px;
-}
-
-.barra-redes:hover {
-  margin: 0;
-  transition: 0.5s ease;
-}
-
-.barra-redesIcon {
-  display: inline-block;
-  color: #fff;
-  background: #000000;
-  padding: 10px 15px;
-  text-decoration: none;
-  transition: all 0.5s;
-  font-size: 25px;
-  width: 100%;
-}
-
-.icon-face:hover {
-  color: nth($colores, 1);
-}
-
-.icon-mail:hover {
-  color: nth($colores, 2);
-}
-
-.icon-whatsapp:hover {
-  color: nth($colores, 3);
-}
-
-.barra-redes ul {
-  list-style: none;
-  padding: 0;
-}
-a {
-  @include a-decoration($text, $color);
-}
-
-a:hover {
-  color: rgba(145, 93, 93, 0.658);
-  text-decoration: underline;
-}
-
-.activo {
-  text-decoration: underline;
-  color: rgba(240, 248, 255, 0.205);
-}
-
-footer {
-  background-color: rgba(152, 157, 161, 0.966);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0%;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.insta,
-.correo {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 80px;
-  color: rgba(184, 185, 184, 0.877);
-}
-
-.insta:hover,
-.correo:hover {
-  text-decoration: none;
-}
-
-.pie {
-  margin-left: 10px;
-}
-
 .fondo__op {
   display: flex;
   flex-wrap: wrap;
@@ -147,6 +12,7 @@ footer {
   align-items: center;
   width: auto;
   padding: 15px;
+  box-shadow: #000000;
 }
 
 .img-index__2 {
@@ -217,16 +83,4 @@ footer {
 
 #footerMobile {
   display: none;
-}
-
-@media screen and (max-width: 320px) {
-  nav {
-    display: none;
-  }
-  .barra-redes {
-    display: none;
-  }
-  #barraMobile {
-    display: grid;
-  }
 }

@@ -1,0 +1,146 @@
+.top-page {
+  position: sticky;
+  left: 1700px;
+  bottom: 40px;
+}
+
+.top-page__decoration {
+  font-weight: bold;
+  font-size: 25px;
+  color: #2f4353;
+}
+
+.button-mod {
+  background-color: rgba(87, 114, 119, 0.562);
+}
+
+.button-mod:hover {
+  background-color: rgb(67, 70, 69);
+}
+
+.bannerGaleria {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.img-banner {
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 7px 7px 15px #592a08;
+}
+
+.gallery {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 40px;
+  padding-bottom: 100px;
+  text-shadow: 2px 2px #161414;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.barra__seleccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  box-shadow: 7px 7px 15px #592a08;
+  color: #fff;
+  background: linear-gradient(45deg, grey, rgba(6, 6, 104, 0.8), black, rgb(153, 23, 23));
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease-in-out infinite;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.barra__menu-color {
+  display: flex;
+  flex-direction: row;  
+}
+.barra__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.barra__copas,
+.barra__vasos,
+.barra__chopps,
+.barra__platos {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 35px;
+  margin: auto;
+  z-index: 190;
+}
+
+.galeria__grid-img:hover {
+  transform: scale(1.1);
+  background-color: #f9fcff;
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+  transition: all 0.6s;
+}
+
+.galeria__grid-img {
+  background-color: rgba(240, 248, 255, 0.692);
+  width: 15rem;
+  border-radius: 10%;
+  margin: 25px auto;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592a08;
+  width: 100%;
+}
+
+.galeria__copas,
+.galeria__vasos,
+.galeria__chopps,
+.galeria__platos {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 30px;
+  margin: 5%;
+  padding-top: 5%;
+  width: 60%;
+}
+
+.galeria__img {
+  width: 100%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  background: #1a1e23;
+  margin: 0;
+}
+
+

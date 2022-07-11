@@ -2,16 +2,18 @@
   position: sticky;
   left: 1700px;
   bottom: 40px;
+  margin-top: 300px;
 }
 
 .top-page__decoration {
   font-weight: bold;
   font-size: 25px;
-  color: #2f4353;
+  color: #f14235;
 }
 
 .button-mod {
   background-color: rgba(87, 114, 119, 0.562);
+  margin: 10px;
 }
 
 .button-mod:hover {
@@ -26,8 +28,8 @@
 
 .img-banner {
   width: 100%;
-  max-width: 800px;
   box-shadow: 7px 7px 15px #592a08;
+  margin: 20px;
 }
 
 .gallery {
@@ -53,10 +55,17 @@
   border: 1px solid black;
   box-shadow: 7px 7px 15px #592a08;
   color: #fff;
-  background: linear-gradient(45deg, grey, rgba(6, 6, 104, 0.8), black, rgb(153, 23, 23));
+  background: linear-gradient(
+    45deg,
+    grey,
+    rgba(6, 6, 104, 0.8),
+    black,
+    rgb(153, 23, 23)
+  );
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 10s ease-in-out infinite;
+  width: auto;
 }
 
 @keyframes cambiar {
@@ -73,7 +82,7 @@
 
 .barra__menu-color {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
 .barra__menu {
   display: flex;
@@ -109,7 +118,6 @@
   margin: 25px auto;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;
-  width: 100%;
 }
 
 .galeria__copas,
@@ -137,10 +145,3 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
-body {
-  background: #1a1e23;
-  margin: 0;
-}
-
-

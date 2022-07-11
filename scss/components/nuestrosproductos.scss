@@ -42,23 +42,24 @@ th {
 
 .banner-width {
   width: 100%;
+  height: auto;
   margin: 20px auto;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;
   color: #000000;
 }
 
-.cardMargin{
+.cardMargin {
   margin-top: 15px;
-  margin-bottom: 15px; 
-} 
+  margin-bottom: 15px;
+  overflow: hidden;
+}
 
-
-.cardMargin:hover{
+.cardMargin:hover {
   transform: scale(1.1);
 }
 
-.cardWidth{
+.cardWidth {
   height: 100%;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;

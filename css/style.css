@@ -16,19 +16,16 @@
 .img-index__1 {
   align-items: center;
   width: auto;
+  height: auto;
   padding: 15px;
   box-shadow: #000000;
-}
-
-.img-index__2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .img-index__3 {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 .img-index__1bm {
@@ -37,23 +34,14 @@
   border-radius: 3%;
   margin-left: 2%;
   width: 30%;
+  height: auto;
   min-width: 280px;
-}
-
-.img-index__2bm {
-  display: flex;
-  border: 0.3em groove burlywood;
-  border-radius: 3%;
-  margin-left: 2%;
-  max-width: 25rem;
-  max-height: 25rem;
-  max-height: 25rem;
 }
 
 .img-index__3bm {
   display: flex;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
   border: 0.3em groove burlywood;
   border-radius: 3%;
   margin-left: 1%;
@@ -88,6 +76,10 @@
 
 #footerMobile {
   display: none;
+}
+
+.banner-widht-index {
+  width: 100%;
 }
 
 h2 {
@@ -134,6 +126,7 @@ th {
 
 .banner-width {
   width: 100%;
+  height: auto;
   margin: 20px auto;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;
@@ -143,6 +136,7 @@ th {
 .cardMargin {
   margin-top: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .cardMargin:hover {
@@ -163,8 +157,8 @@ th {
   justify-content: center;
   background-color: rgba(240, 248, 255, 0.486);
   opacity: 1;
-  border: 1px solid black;
-  margin: 40px;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592a08;
   width: 100%;
 }
 
@@ -184,21 +178,12 @@ th {
   margin: 20px;
 }
 
-.carousel-qsomos {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  margin: 30px;
-}
-
 .width-carrImg {
-  width: 35%;
-  margin: 80px;
+  width: 100%;
 }
 
 iframe {
-  margin: 15px;
+  margin: 0;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;
   width: 50%;
@@ -208,6 +193,13 @@ iframe {
 
 .iframe-flex {
   display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../assets-bazar/imagenes-mejoradas/fabrica-botella.jpg);
+  transform-style: preserve-3d;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -215,23 +207,26 @@ iframe {
 }
 
 .div-left {
-  width: 40%;
+  width: 100%;
+  margin-bottom: 55px;
 }
 
 .top-page {
   position: sticky;
   left: 1700px;
   bottom: 40px;
+  margin-top: 300px;
 }
 
 .top-page__decoration {
   font-weight: bold;
   font-size: 25px;
-  color: #2f4353;
+  color: #f14235;
 }
 
 .button-mod {
   background-color: rgba(87, 114, 119, 0.562);
+  margin: 10px;
 }
 
 .button-mod:hover {
@@ -246,8 +241,8 @@ iframe {
 
 .img-banner {
   width: 100%;
-  max-width: 800px;
   box-shadow: 7px 7px 15px #592a08;
+  margin: 20px;
 }
 
 .gallery {
@@ -277,6 +272,7 @@ iframe {
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 10s ease-in-out infinite;
+  width: auto;
 }
 
 @keyframes cambiar {
@@ -329,7 +325,6 @@ iframe {
   margin: 25px auto;
   border: 1px solid #ccc;
   box-shadow: 7px 7px 15px #592a08;
-  width: 100%;
 }
 
 .galeria__copas,
@@ -356,11 +351,6 @@ iframe {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-}
-
-body {
-  background: #1a1e23;
-  margin: 0;
 }
 
 .map-size {
@@ -416,6 +406,15 @@ h3 {
   width: 100%;
 }
 
+.padding-form {
+  padding: 15px;
+}
+
+.btn-decoration:hover {
+  text-decoration: none;
+  background-color: rgb(255, 105, 105);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -465,11 +464,11 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 main {
-  background: rgba(0, 0, 0, 0.4) url(../assets-bazar/imagenes/imagen-background.jpg);
+  background: rgba(0, 0, 0, 0.4) url(../assets-bazar/imagenes-mejoradas/imagen-background.avif);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,18 +483,19 @@ main {
   left: 0;
   top: 350px;
   z-index: 2000;
-  margin: -70px;
+  margin-left: -70px;
 }
 
 .arrow {
   font-size: 35px;
   padding: 14px;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 8;
 }
 
 .barra-redes:hover {
   margin: 0;
-  transition: 0.5s ease-in-out;
+  padding: 0;
+  transition: 0.5s ease;
 }
 
 .barra-redesIcon {
@@ -572,10 +572,6 @@ footer {
   margin-left: 10px;
 }
 
-#barraMobile {
-  display: none;
-}
-
 #footerMobile {
   display: none;
 }
@@ -588,6 +584,14 @@ footer {
   display: none;
 }
 
+.menuRedesTablet {
+  display: none;
+}
+
+.menuRedesTablet-galeria {
+  display: none;
+}
+
 /* Mobile */
 @media screen and (max-width: 320px) {
   nav {
@@ -595,6 +599,16 @@ footer {
   }
   .barra-redes {
     display: none;
+  }
+  .barra__copas,
+.barra__vasos,
+.barra__chopps,
+.barra__platos {
+    padding: 0%;
+    margin: 20px;
+  }
+  .banner-widht-index {
+    max-height: 120px;
   }
   .insta,
 .correo {
@@ -606,9 +620,6 @@ footer {
     display: flex;
     justify-content: center;
   }
-  .top-page {
-    display: none;
-  }
   footer {
     display: flex;
     flex-direction: column;
@@ -618,6 +629,14 @@ footer {
     margin: 0%;
     min-width: 250px;
   }
+  .menuRedesTablet-galeria {
+    display: initial;
+    position: fixed;
+    bottom: 40px;
+    right: 735px;
+    background-color: grey;
+    border-radius: 50% !important;
+  }
   .galeria__copas,
 .galeria__vasos,
 .galeria__chopps,
@@ -626,7 +645,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin: 5%;
     width: 90%;
@@ -636,15 +655,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .map-size {
-    width: 90%;
+    width: 100%;
     height: 25rem;
     border-radius: 6%;
     margin-bottom: 60px;
-  }
-  .qsomos-mobile {
-    display: flex;
-    flex-direction: column !important;
-    margin: 30px;
   }
   .width-carrImg {
     width: auto;
@@ -652,6 +666,69 @@ footer {
   }
   #barraMobile {
     display: grid;
+  }
+}
+@media screen and (max-width: 820px) {
+  .barra-redes {
+    display: none;
+  }
+  .menuRedesTablet {
+    display: initial;
+    position: fixed;
+    bottom: 150px;
+    margin-right: 640px;
+    margin-left: 10px;
+    background-color: grey;
+    border-radius: 50% !important;
+  }
+  .menuRedesTablet-galeria {
+    display: initial;
+    position: sticky;
+    bottom: 150px;
+    right: 735px;
+    background-color: grey;
+    border-radius: 50% !important;
+  }
+  .botonRedesTablet:hover {
+    background-color: #592a08;
+  }
+  .botonRedesTablet {
+    border-radius: 50%;
+    background-color: grey;
+    width: 100%;
+    border-radius: 50% !important;
+    border-bottom: #d2ccc4;
+  }
+  .despliegueMenuRedes {
+    padding-right: 4px;
+    transition: all 0.5s ease-in;
+    min-width: auto !important;
+    background: none;
+    border: none;
+  }
+  .border-icons {
+    border-radius: 50%;
+    margin: 5px auto;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 7px 7px 15px #592a08;
+  }
+  .galeria__copas,
+.galeria__vasos,
+.galeria__chopps,
+.galeria__platos {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 30px;
+    margin: 5%;
+    width: 90%;
+  }
+  .qsomos-mobile {
+    display: flex;
+    flex-direction: column !important;
+    margin: 0 auto;
   }
 }
 

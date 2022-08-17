@@ -6,7 +6,7 @@ const pName = document.getElementById("textNameVerify");
 const mailUserVerify = document.getElementById("mailUserVerify")
 
 formNombre.addEventListener("input", () => {
-    if (formNombre.value.length < 3 || null) {
+    if (formNombre.value.length < 3) {
         pName.innerHTML = "Ingrese un nombre por favor"
     } else { pName.innerHTML = " " }
     if (formNombre.value.length <= 0) {
@@ -16,7 +16,7 @@ formNombre.addEventListener("input", () => {
 
 
 formEmail.addEventListener("input", () => {
-    if (formEmail.value.length < 6 || null) {
+    if (formEmail.value.length < 6) {
         mailUserVerify.innerHTML = "Ingrese un mail válido"
     } else { mailUserVerify.innerHTML = " " }
     if (formEmail.value.length <= 0) {
@@ -24,7 +24,9 @@ formEmail.addEventListener("input", () => {
     }
 });
 
-/* Pregunta al usuario su nombre y lo coloca como mensaje de bienvenida solo en la pagina de inico*/
 
-let nameUser = prompt("Ingresa tu nombre");
-let mensaje = document.getElementById("mensajeBienvenida").innerHTML = " " + nameUser + "!";
+/* En index.html coloqué el siguiente codigo para solicitarle al usuario el nombre y darle la bienvenida*/
+/*<script>const nameUser = prompt("Ingresa tu nombre");
+    document.getElementById("mensajeBienvenida").innerHTML = " " + nameUser+ "!"</script>*/
+
+

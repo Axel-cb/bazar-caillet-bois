@@ -150,6 +150,10 @@ th {
   color: #000000;
 }
 
+.btn-success {
+  width: 100%;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;

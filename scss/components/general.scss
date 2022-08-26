@@ -246,7 +246,17 @@ footer {
   #barraMobile {
     display: grid;
   }
+  .cardWidth{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cardWidth:hover {
+    transform: none;
+  }
 }
+
 // Tablet
 
 @media screen and (max-width: 820px) {
@@ -310,5 +320,8 @@ footer {
     display: flex;
     flex-direction: column !important;
     margin: 0 auto;
+  }
+  .cardWidth:hover {
+    transform: none;
   }
 }

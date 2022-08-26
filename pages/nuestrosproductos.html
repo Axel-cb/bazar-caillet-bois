@@ -29,7 +29,7 @@
     <header class="gradiente-header">
         <h1>Bazar mayorista</h1>
     </header>
-                <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light nav-color nav-sticky">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -55,9 +55,44 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
+            <div class="dropdown buttonCarrito">
+
+                <button class="btn btn-primary dropdown-toggle buttonCart" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img src="../assets-bazar/imagenes-mejoradas/carrito-30px (1).png" alt=""></span><span
+                        id="cartCount">0</span>
+                </button>
+                <ul id="carrito" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li>
+                        
+
+                        <table class="table lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Unidades</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="nombre"></td>
+                                    <td id="precio"></td>
+                                    <td id="imagen"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
     </nav>
-                <!-- Barra de redes sociales y contacto -->
+
+    <!-- Barra de redes sociales y contacto -->
     <div class="barra-redes">
         <ul>
             <li>
@@ -76,279 +111,288 @@
     </div>
     <main>
         <!-- banner -->
+        
+        <!-- <div id="carrito" class="container-fluid"></div> -->
         <div class="container">
             <img src="../assets-bazar/imagenes-mejoradas/banner_seccion_gral_Lumilagro_1000x300 (1).avif"
                 alt="termo de acero cebando un mate" class="banner-width">
         </div>
         <!-- cards -->
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6">
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/acero-blanco.avif" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termos de Acero Luminox en Colores – Blanco</h5>
-                            <p class="card-text">$10,152.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+            <div id="catalogo"
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 contenedor-cards"
+                style="justify-content: center">
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/acero-blanco.avif" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termos de Acero Luminox en Colores – Blanco</h5>
+                        <p class="card-text">$10,152.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/acero-negro.avif" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termos de Acero Luminox en Colores – Negro</h5>
-                            <p class="card-text">$10,152.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/acero-negro.avif" class="card-img-top imagenCard"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title producto">Termo de Acero Luminox Negro</h5>
+                        <p class="card-text precio">$10,152.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/acero-boca.avif" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo de Acero Luminox Boca Jrs – Camiseta</h5>
-                            <p class="card-text">$10,295.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/acero-boca.avif" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo de Acero Luminox Boca Jrs – Camiseta</h5>
+                        <p class="card-text">$10,295.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/acero-arg.avif" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo de Acero Luminox Bandera Argentina</h5>
-                            <p class="card-text">$10,152.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/acero-arg.avif" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo de Acero Luminox Bandera Argentina</h5>
+                        <p class="card-text">$10,152.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/tangoazul1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Tango 1000 Compacto – Azul</h5>
-                            <p class="card-text">$3,177.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/tangoazul1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Tango 1000 Compacto – Azul</h5>
+                        <p class="card-text">$3,177.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/tangorosa1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Tango 1000 Compacto – Rosa</h5>
-                            <p class="card-text">$3,177.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/tangorosa1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Tango 1000 Compacto – Rosa</h5>
+                        <p class="card-text">$3,177.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/sigmaazul1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Sigma – Azul</h5>
-                            <p class="card-text">$2,463.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/sigmaazul1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Sigma – Azul</h5>
+                        <p class="card-text">$2,463.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/sigmavioleta1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Sigma – Violeta</h5>
-                            <p class="card-text">$2,463.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/sigmavioleta1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Sigma – Violeta</h5>
+                        <p class="card-text">$2,463.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/alfarojo.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Alfa – Rojo</h5>
-                            <p class="card-text">$2,321.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/alfarojo.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Alfa – Rojo</h5>
+                        <p class="card-text">$2,321.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/alfagris.avif" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Alfa – Gris</h5>
-                            <p class="card-text">$2,321.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/alfagris.avif" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Alfa – Gris</h5>
+                        <p class="card-text">$2,321.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/tatuazul.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Tatú – Azul</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/tatuazul.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Tatú – Azul</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/taturojo1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Tatú – Rojo</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/taturojo1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Tatú – Rojo</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/boca1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Mate Joven Boca Jrs</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/boca1.webp" class="card-img-top" alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Mate Joven Boca Jrs</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/river1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Mate Joven River Plate</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/river1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Mate Joven River Plate</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/casla1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Mate Joven San Lorenzo</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/casla1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Mate Joven San Lorenzo</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/racing1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Mate Joven Racing Club</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/racing1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Mate Joven Racing Club</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/cai1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Termo Mate Joven Independiente</h5>
-                            <p class="card-text">$2,215.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/cai1.webp" class="card-img-top" alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Termo Mate Joven Independiente</h5>
+                        <p class="card-text">$2,215.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/capriceblanco1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Jarra Caprice – Blancoe</h5>
-                            <p class="card-text">$3,026.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/capriceblanco1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Jarra Caprice – Blanco</h5>
+                        <p class="card-text">$3,026.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/iazul2.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical Blanco – Azul</h5>
-                            <p class="card-text">$2,613.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/iazul2.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical Blanco – Azul</h5>
+                        <p class="card-text">$2,613.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/inaranja2.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical Blanco – Naranja</h5>
-                            <p class="card-text">$2,613.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/inaranja2.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical Blanco – Naranja</h5>
+                        <p class="card-text">$2,613.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/iazuln1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical Negro – Azul</h5>
-                            <p class="card-text">$2,613.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/iazuln1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical Negro – Azul</h5>
+                        <p class="card-text">$2,613.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/inaranjan1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical Negro – Naranja</h5>
-                            <p class="card-text">$2,613.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/inaranjan1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical Negro – Naranja</h5>
+                        <p class="card-text">$2,613.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/isoboca1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical Boca Jrs</h5>
-                            <p class="card-text">$3,065.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/isoboca1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical Boca Jrs</h5>
+                        <p class="card-text">$3,065.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
-                <div class="col cardMargin">
-                    <div class="card cardWidth">
-                        <img src="../assets-bazar/imagenes-mejoradas/isoriver1.webp" class="card-img-top"
-                            alt="card-grid-image">
-                        <div class="card-body">
-                            <h5 class="card-title">Isotérmico Tropical River Plate</h5>
-                            <p class="card-text">$3,065.00</p>
-                            <button class="btn btn-success">Agregar</button>
-                        </div>
+
+                <div class="card cardWidth">
+                    <img src="../assets-bazar/imagenes-mejoradas/isoriver1.webp" class="card-img-top"
+                        alt="card-grid-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Isotérmico Tropical River Plate</h5>
+                        <p class="card-text">$3,065.00</p>
+                        <button class="comprar">Agregar <i class="fa fa-shopping-cart"
+                                style="font-size:20px"></i></button>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- menú redes tablet -->
         <div class="btn-group dropup menuRedesTablet">
             <button type="button" class="btn btn-primary botonRedesTablet" data-bs-toggle="dropdown"
@@ -371,8 +415,9 @@
                 </li>
             </ul>
         </div>
+
     </main>
-                  <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <a href="https://www.instagram.com/rigolleau.s.a/" class="insta"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://axel.cbois91@gmail.com" class="correo"><i class="fa-solid fa-envelope"></i></a>
@@ -399,6 +444,7 @@
         });
     </script> -->
     <script src="../js/app.js"></script>
+    <script src="../js/catalogo.js"></script>
 </body>
 
 </html>

@@ -188,6 +188,9 @@ th {
 .buttonCart {
   background: transparent;
   border: none;
+  border-radius: 118px;
+  background: #a6a6a6;
+  box-shadow: 9px -9px 17px #4e4e4e, -9px 9px 17px #fefefe;
 }
 
 .buttonCart:hover {
@@ -209,7 +212,7 @@ th {
   box-shadow: inset 0.5rem 0.5rem 1rem #fff, inset -0.2rem -0.2rem 1rem #ccc;
   outline: none;
   background-color: transparent;
-  border-color: none;
+  border-color: transparent;
 }
 
 .buttonCart::after {

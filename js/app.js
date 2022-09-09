@@ -26,6 +26,13 @@ const stock = [
     { id: 23, imagen: "../assets-bazar/imagenes-mejoradas/isoboca1.webp", nombre: "Isotérmico Tropical Boca Jrs", precio: 3065, },
     { id: 24, imagen: "../assets-bazar/imagenes-mejoradas/isoriver1.webp", nombre: "Isotérmico Tropical River Plate", precio: 3065, },
 ];
+
+
+
+
+
+
+
 let contadorCarrito = 0;
 let carrito = [];
 const contadorProductosCart = document.getElementById("cartCount");
@@ -45,14 +52,18 @@ const productosHtml = (producto) => {
 }
 
 const productosCart = (producto) => {
+    document.getElementById("modall")
     return `
     <img src=${producto.imagen}  class="img-width" >    
-        <h5 class="card-title">${producto.nombre}</h5>
-        <p class="card-text">$${producto.precio}</p>
-        <button id="quitar${producto.idCompra}" class="comprar quit btn-danger">Quitar</button>
+    <h5 class="card-title">${producto.nombre}</h5>
+    <p class="card-text">$${producto.precio}</p>
+    <hr></hr>
+    <button id="quitar${producto.idCompra}" class="comprar quit btn-danger">Quitar</button>
+
     
 `
 }
+
 
 
 const renderHtml = () => {
@@ -117,9 +128,7 @@ const jsonStorage = () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     /*   Operador ternario */
-    localStorage.getItem(`carrito`) ? jsonStorage()
-        : []
-
+    localStorage.getItem(`carrito`) ? jsonStorage() : []
 });
 
 
@@ -148,10 +157,17 @@ for (const producto of stock) {
 /*              Operador lógico and */
 buttonCarrito = document.getElementById("dropdownMenuButton")
 buttonCarrito.addEventListener("click", () => {
-    carrito.length === 0 && alert("Carrito vacio");
+    carrito.length === 0 && Swal.fire('El carrito está vacío');
 });
 
 
+const $pokemon = document.querySelector('#pokemon')
+function renderPokemon () {
+        
+}
 
+/*fetch para cargar datos de manero asincrónica */
 
-
+ fetch('https://pokeapi.co/api/v2/pokemon/ditto/')
+ .then((response) => response.json())
+ .then(pokemon => console.log(pokemon) )

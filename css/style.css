@@ -110,16 +110,6 @@ p {
   font-weight: bold;
 }
 
-.table {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  background-color: rgba(240, 248, 255, 0.692);
-  width: auto;
-}
-
 th {
   color: rgba(165, 120, 60, 0.856);
 }
@@ -246,6 +236,122 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.product-cart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 15px auto 15px auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.carrito {
+  margin-right: 30%;
+  margin-left: 100px;
+  right: 0;
+}
+
+.img-cart {
+  width: 50px;
+}
+
+.button-emptyCart {
+  width: 50%;
+}
+
+.width-listCart {
+  width: 100%;
+}
+
+.center-description {
+  display: flex;
+  justify-content: center;
+}
+
+.eliminarProducto {
+  font-size: 20px;
+}
+
+.eliminarProducto:hover {
+  color: rgba(255, 0, 0, 0.767);
+}
+
+.buttonCartEmptyView {
+  width: 300px;
+  text-decoration: none;
+  border-style: hidden;
+}
+
+#precioTotal {
+  font-size: 20px;
+}
+
+.totalPrecio {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonCartNew {
+  background: transparent;
+  border: 2px solid #eee;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc, -0.5rem -0.5rem 1rem #fff;
+  outline: none;
+}
+
+.buttonCartNew:hover {
+  background: transparent;
+  border: none;
+  box-shadow: 0.5rem 0.5rem 1rem #fff, -0.5rem -0.5rem 1rem #ccc;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(95, 102, 95, 0.966);
+}
+
+.buttonCartNew:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc, -0.5rem -0.5rem 1rem #fff;
+  outline: none;
+}
+
+.backgroundCart {
+  color: #eee;
+  background: rgba(0, 0, 0, 0.9803921569);
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+.tableCart {
+  color: #ccc;
+  background-color: #000000;
+  min-width: 30rem;
+  max-height: 600px;
+}
+
+.buttonCartNew:focus-within {
+  background-color: rgba(95, 102, 95, 0.966);
+  border: transparent;
+}
+
+#buttonCartEmptyView {
+  color: #b15a5a;
+  background-color: #000000;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+#buttonCartEmptyView:hover {
+  background-color: #d62c2c;
+  color: #000000;
+  transition: all 0.5s ease-in;
+}
+
+.rowTable {
+  border-bottom-width: 4px !important;
 }
 
 .about-us {

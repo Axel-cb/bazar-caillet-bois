@@ -1,5 +1,6 @@
  
-   [ { "id": 1, "imagen": "../assets-bazar/imagenes-mejoradas/acero-blanco.avif", "nombre": "Termos de Acero Luminox en Colores – Blanco", "precio": 10152 },
+   [
+    { "id": 1, "imagen": "../assets-bazar/imagenes-mejoradas/acero-blanco.avif", "nombre": "Termos de Acero Luminox en Colores – Blanco", "precio": 10152 },
     { "id": 2, "imagen": "../assets-bazar/imagenes-mejoradas/acero-negro.avif", "nombre": "Termo de Acero Luminox Negro", "precio": 10152},
     { "id": 3, "imagen": "../assets-bazar/imagenes-mejoradas/acero-boca.avif", "nombre": "Termo de Acero Luminox Boca Jrs – Camiseta", "precio": 10295},
     { "id": 4, "imagen": "../assets-bazar/imagenes-mejoradas/acero-arg.avif", "nombre": "Termo de Acero Luminox Bandera Argentina", "precio": 10152},

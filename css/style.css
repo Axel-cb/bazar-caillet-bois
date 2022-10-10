@@ -354,6 +354,10 @@ th {
   border-bottom-width: 4px !important;
 }
 
+.colorProductCart:hover {
+  background: aliceblue;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;

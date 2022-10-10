@@ -25,11 +25,13 @@ const productosHtml = (producto) => {
 const productosCart = (producto) => {
     return `
     <table class="table table-hover tableCart" id="carritoRender" >         
-    <tbody>           
+    <tbody>        
+    <tr class="colorProductCart">
                     <td><img src="${producto.imagen}" class="img-cart"</td>
                     <td class="width-listCart">${producto.nombre}</td>
                     <td class="width-listCart">$${producto.precio}</td>                    
-                    <td><a href="#" class="eliminarProducto" id="quitar${producto.idCompra}">x</a></td>            
+                    <td><a href="#" class="eliminarProducto" id="quitar${producto.idCompra}">x</a></td> 
+                    </tr>           
                 </tbody>
               </table>
              
@@ -79,7 +81,18 @@ const buttonAdd = () => {
                 const botonNodo = document.getElementById(botonId);
 
                 botonNodo.addEventListener("click", () => {
-
+                    Toastify({
+                        text: "Producto agregado al carrito",
+                        duration: 3000,
+                        close: true,
+                        gravity: "top",
+                        position: "center",
+                        stopOnFocus: true,
+                        style: {
+                            background: "linear-gradient(to right, #00b09b, #96c93d)",
+                        },
+                        onClick: function () { }
+                    }).showToast();
                     const productoCarrito = {
                         imagen: producto.imagen,
                         nombre: producto.nombre,
